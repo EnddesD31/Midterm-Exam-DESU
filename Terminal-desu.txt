@@ -1,0 +1,100 @@
+NAMA  : Enddes Dwiriga
+NIM   : 4212301069
+Kelas : MK5CPAGI
+
+"Terminal Proses Saat Menjalankan Program"
+
+=======================================================
+Program Klasifikasi EMNIST Dimulai pada Fri Oct 31 09:37:21 2025
+Log Output: D:\Semester 5\Machine Vision\ATS\output\evaluation_log.txt
+=======================================================
+ERROR: File D:\Semester 5\Machine Vision\ATSrchive\emnist-letters-train.csv tidak ditemukan.
+(.venv) PS D:\Semester 5\Machine Vision\ATS> & "D:/Semester 5/Machine Vision/ATS/.venv/Scripts/python.exe" "d:/Semester 5/Machine Vision/ATS/main.py"
+d:\Semester 5\Machine Vision\ATS\main.py:23: SyntaxWarning: invalid escape sequence '\S'
+  DATA_DIR = 'D:\Semester 5\Machine Vision\ATS\archive'
+d:\Semester 5\Machine Vision\ATS\main.py:26: SyntaxWarning: invalid escape sequence '\S'
+  OUTPUT_DIR = 'D:\Semester 5\Machine Vision\ATS\output'
+=======================================================
+Program Klasifikasi EMNIST Dimulai pada Fri Oct 31 09:38:33 2025
+Log Output: D:\Semester 5\Machine Vision\ATS\output\evaluation_log.txt
+=======================================================
+ERROR: File D:\Semester 5\Machine Vision\ATSrchive\emnist-letters-train.csv tidak ditemukan.
+(.venv) PS D:\Semester 5\Machine Vision\ATS> & "D:/Semester 5/Machine Vision/ATS/.venv/Scripts/python.exe" "d:/Semester 5/Machine Vision/ATS/main.py"
+=======================================================
+Program Klasifikasi EMNIST Dimulai pada Fri Oct 31 09:40:04 2025
+Log Output: D:\Semester 5\Machine Vision\ATS\output\evaluation_log.txt
+=======================================================
+Memuat dan melakukan sampling data seimbang...
+Total sampel final: 13000 (26 kelas)
+
+---------- FASE 2: EVALUASI LOOCV FINAL ----------
+
+[HOG] Ekstraksi fitur: Orient=9, PPC=(8, 8), CPB=(2, 2)...
+Ekstraksi HOG: 100%|██████████████████████████████████████████████| 13000/13000 [00:02<00:00, 4909.26it/s] 
+Dimensi fitur HOG: (13000, 144)
+
+[LOOCV] Memulai LOOCV FINAL (Kernel=linear, C=10.0)...
+PERINGATAN: LOOCV pada 13000 sampel akan memakan waktu LAMA (jam/hari).
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  26 tasks      | elapsed:   20.3s
+[Parallel(n_jobs=-1)]: Done 176 tasks      | elapsed:  1.5min
+[Parallel(n_jobs=-1)]: Done 426 tasks      | elapsed:  3.7min
+[Parallel(n_jobs=-1)]: Done 776 tasks      | elapsed:  6.9min
+[Parallel(n_jobs=-1)]: Done 1226 tasks      | elapsed: 11.1min
+[Parallel(n_jobs=-1)]: Done 1776 tasks      | elapsed: 16.2min
+[Parallel(n_jobs=-1)]: Done 2426 tasks      | elapsed: 22.5min
+[Parallel(n_jobs=-1)]: Done 3176 tasks      | elapsed: 29.6min
+[Parallel(n_jobs=-1)]: Done 4026 tasks      | elapsed: 37.8min
+[Parallel(n_jobs=-1)]: Done 4976 tasks      | elapsed: 46.9min
+[Parallel(n_jobs=-1)]: Done 6026 tasks      | elapsed: 56.7min
+[Parallel(n_jobs=-1)]: Done 7176 tasks      | elapsed: 67.5min
+[Parallel(n_jobs=-1)]: Done 8426 tasks      | elapsed: 79.2min
+[Parallel(n_jobs=-1)]: Done 9776 tasks      | elapsed: 92.1min
+[Parallel(n_jobs=-1)]: Done 11226 tasks      | elapsed: 105.8min
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 122.5min finished
+
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+Waktu komputasi total LOOCV: 2.04 jam
+Akurasi LOOCV: 81.39%
+
+[VISUALISASI] Confusion Matrix disimpan ke: D:\Semester 5\Machine Vision\ATS\output\confusion_matrix_hog_svm_linear.png
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 122.5min finished
+
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+Waktu komputasi total LOOCV: 2.04 jam
+Akurasi LOOCV: 81.39%
+
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 122.5min finished
+
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+Waktu komputasi total LOOCV: 2.04 jam
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 122.5min finished
+
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 122.5min finished
+
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 12776 tasks      | elapsed: 120.4min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 122.5min finished
+
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 122.5min finished
+
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+Waktu komputasi total LOOCV: 2.04 jam
+Akurasi LOOCV: 81.39%
+Waktu komputasi total LOOCV: 2.04 jam
+Akurasi LOOCV: 81.39%
+Akurasi LOOCV: 81.39%
+
+[VISUALISASI] Confusion Matrix disimpan ke: D:\Semester 5\Machine Vision\ATS\output\confusion_matrix_hog_sv[VISUALISASI] Confusion Matrix disimpan ke: D:\Semester 5\Machine Vision\ATS\output\confusion_matrix_hog_svm_linear.png
+
+--- EKSEKUSI PROGRAM SELESAI ---
+(.venv) PS D:\Semester 5\Machine Vision\ATS>
